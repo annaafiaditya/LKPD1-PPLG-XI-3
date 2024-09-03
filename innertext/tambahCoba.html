@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tambah</title>
+    <style>
+        .option {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TAMBAH CHANGE</h1>
+    <form>
+        <div id="container">
+            <div class="option">
+                <label>opsi 1</label>
+                <br>
+                <input type="number" name="poin" placeholder="poin">
+                <input type="text" name="deskripsi" placeholder="deskripsi opsi">
+            </div>
+        </div>
+        <div>
+            <button type="button" id="button" onclick="tambah()">+tambah opsi</button>
+        </div>
+    </form>
+
+    <script>
+        let no = 1;
+        function tambah() {
+            const container = document.getElementById('container');
+            no += 1; 
+            
+            const tambahan = `
+                <div class="option">
+                    <label>opsi ${no}</label>
+                    <br>
+                    <input type="number" name="poin" placeholder="poin">
+                    <input type="text" name="deskripsi" placeholder="deskripsi opsi">
+                </div>
+            `;
+            
+            container.innerHTML += tambahan;
+        }
+    </script>
+</body>
+</html>

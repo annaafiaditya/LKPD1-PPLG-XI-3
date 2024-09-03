@@ -1,0 +1,26 @@
+
+
+.card1, .card3 {
+    text-align: start;
+    border:2px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+.card2 {
+    text-align: end;
+    border:2px solid black;
+    height: 150px;
+    width: 150px;
+    margin-left: 800px;
+}
+
+
+button {
+    width: 70px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e6e3e3;
+    font-family: Arial, sans-serif;
+}
+
+.controls, .controls2 {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faded-image {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
